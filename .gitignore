@@ -11,3 +11,7 @@ venv.bak/
 log.html
 output.xml
 report.html
+
+#Binaries
+*.deb
+tedge-mqtt-proxy

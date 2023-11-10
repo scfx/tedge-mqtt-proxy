@@ -1,0 +1,7 @@
+{
+  "python.envFile": "${workspaceFolder}/.env",
+  "cSpell.words": [
+    "mqtt",
+    "Tedge"
+  ]
+}

@@ -1,0 +1,13 @@
+[Unit]
+Description=tedge-mqtt-proxy
+After=network.target
+
+[Service]
+User=root
+ExecStart=/etc/tedge/plugins/tedge-mqtt-proxy
+Restart=on-failure
+
+WatchdogSec=30
+
+[Install]
+WantedBy=multi-user.target

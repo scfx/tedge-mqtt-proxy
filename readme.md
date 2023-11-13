@@ -24,5 +24,5 @@ just up
 You can build dpkg packages for your architecture with the following command:
 
 ```bash
-./build.sh --version {{version}} --arch {{architecture}}
+./package.sh --version {{version}} --arch {{architecture}}
 ```

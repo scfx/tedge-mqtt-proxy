@@ -13,15 +13,11 @@ Tedge Device should exsist
 Tedge-mqtt-proxy should be installed
     Device Should Have Installed Software    tedge-mqtt-proxy
 
-Child Device can be created
-    PUT
-    ...    http://localhost:8020/te/device/child01//
-    ...    data={"@type": "child-device","name":"child01","type": "test"}
-    ...    expected_status=201
-    Device Should Have A Child Devices    child01
+Tedge-mqtt-proxy should be enabled
+    Cumulocity.Should Have Services    name=tedge-mqtt-proxy    service_type=systemd    status=up
 
 Fragments of Device can be updated
-    PUT
+    POST
     ...    http://localhost:8020/te/device/main///twin/test_fragment
     ...    data={}
     ...    expected_status=201

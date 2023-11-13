@@ -1,6 +1,6 @@
 # Thin-edge.io mqtt proxy
 
-This plugin is a http proxy for the thin-edge mqtt broker. If you control does not support mqtt, or you want to use REST for any other reason, this plugin is for you. It maps all REST PUT Messages with the URL '/tedge/\_', '/te/\_', '/c8y/\_' to the mqtt topic and forwards the request body.
+This plugin is a http proxy for the thin-edge mqtt broker. If you control does not support mqtt, or you want to use REST for any other reason, this plugin is for you. It maps all REST POST Messages with the URL '/tedge/\_', '/te/\_', '/c8y/\_' to the mqtt topic and forwards the request body.
 
 ---
 

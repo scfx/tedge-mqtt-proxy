@@ -22,10 +22,10 @@ func main() {
 	r := mux.NewRouter()
 	r.SkipClean(true)
 	//Wildcard /te path
-	r.PathPrefix("/te/").Handler(th)
+	r.PathPrefix("/te/").Methods(http.MethodPost).Handler(th)
 
 	//Wildcard /tedge path
-	r.PathPrefix("/tedge/").Handler(th)
+	r.PathPrefix("/tedge/").Methods(http.MethodPost).Handler(th)
 
 	//Wildcard /c8y path
 	r.PathPrefix("/c8y/").Methods(http.MethodPost).Handler(th)

@@ -5,4 +5,5 @@ services:
       dockerfile: tedge/Dockerfile
     ports:
       - 8020:8020
+      - 1883:1883
     privileged: true

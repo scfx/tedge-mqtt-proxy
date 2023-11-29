@@ -19,7 +19,7 @@ COPY --from=build-stage /tedge-mqtt-proxy /
 COPY package.sh /
 COPY tedge-mqtt-proxy.service /
 RUN chmod +x /package.sh
-RUN /package.sh --version 0.1 --arch arm64
+RUN /package.sh --version 0.1 --arch amd64
 
 # Runner
 FROM ghcr.io/thin-edge/tedge-demo-main-systemd:20231105.1
